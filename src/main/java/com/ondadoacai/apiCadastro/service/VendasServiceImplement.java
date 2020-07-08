@@ -34,7 +34,7 @@ public class VendasServiceImplement implements VendasService {
 
     @Override
     public List<Vendas> getVendas() {
-        List<Vendas> lista = entityManager.createQuery("select v from Vendas", Vendas.class).getResultList();
+        List<Vendas> lista = entityManager.createQuery("select v from Vendas v", Vendas.class).getResultList();
         return lista;
     }
 

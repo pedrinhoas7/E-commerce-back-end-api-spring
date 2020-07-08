@@ -7,7 +7,9 @@ import javax.persistence.EntityManager;
 import com.ondadoacai.apiCadastro.models.Pessoa;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class PessoaDaoImplement implements PessoaDao {
 
     @Autowired

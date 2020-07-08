@@ -33,7 +33,7 @@ public class VendasDaoImplement implements VendasDao {
 
     @Override
     public List<Vendas> getVendas() {
-        List<Vendas> lista = entityManager.createQuery("select v from Vendas v", Vendas.class).getResultList();
+        List<Vendas> lista = entityManager.createQuery("select v from VENDAS v", Vendas.class).getResultList();
         return lista;
     }
 
